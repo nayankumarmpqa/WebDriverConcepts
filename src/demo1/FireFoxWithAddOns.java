@@ -12,6 +12,7 @@ public class FireFoxWithAddOns {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver", "E:\\Selenium Drivers\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		System.out.println(driver.findElement(By.className("gNO89b")).getAttribute("name"));
 
@@ -41,6 +42,7 @@ public class FireFoxWithAddOns {
 
 		}
 
+		driver.navigate().refresh();
 		// getting elements Size:dimention (height, width)
 		Dimension d1 = driver.findElement(By.className("gNO89b")).getSize();
 		Dimension d2 = driver.findElement(By.className("RNmpXc")).getSize();

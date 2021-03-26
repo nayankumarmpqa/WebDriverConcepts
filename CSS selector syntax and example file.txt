@@ -1,0 +1,54 @@
+
+1. id htmltag#attrribvalue , #attribvlaue
+2. class htmltag.classname, .classname , .c1.c2.c3, htmltag.c1.c2.c3..cn
+
+e.g 
+input.classname1.classname2
+or
+input.#id.classname1.classname2
+input.lastclassname3 is also correct
+
+3. parenttag>childdtag
+4. htmltag[attribute1='value']
+e.g input[id='username']
+Also we can use multiple attribute and value combinations using separate brackets 
+e.g. htmltag[attribute1='value'][attribute2='value']
+5. contains in css is not there but we can use the below
+input[attribute1*='value']
+E.g. input[id*='test_']
+6. starting the text in css
+htmltag[attribute^='value']
+input[id^='u']
+7. ending the text in css
+htmltag[attribute$='value']
+input[id^='u']
+
+input#username
+htmltag#id is above
+
+8. comma in css
+div.classname1, input#idvlaue
+
+9. first-of-type
+htmltag#attribvlaue>htmltag:first-of-type
+ul#category>li:first-of-type
+
+10. last-of-type
+htmltag#attribvlaue>htmltag:last-of-type
+ul#category>li:last-of-type
+
+11. nth-of-type(number)
+htmltag#attribvlaue>htmltag:nth-of-type(7)
+ul#category>li:nth-of-type(7)
+
+11. nth-of-type(n) will give you multimple elements not element
+htmltag#attribvlaue>htmltag:nth-of-type(n)
+ul#category>li:nth-of-type(n)
+
+12 next sibling of element
+ul#category>li:nth-of-type(7) + li
+it will give you the next li after 7th li
+
+13 exclude an element
+input.form-control.private-form-control:not(.login-password)
+this will give you username element by excluding the password element that is having similar class in the html
