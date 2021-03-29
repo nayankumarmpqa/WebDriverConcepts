@@ -1,14 +1,15 @@
 
-1. id htmltag#attrribvalue , #attribvlaue
-2. class htmltag.classname, .classname , .c1.c2.c3, htmltag.c1.c2.c3..cn
-
+1. When using id for css selector 
+htmltag#attrribvalue , #attribvlaue
+2. When using class for css selector
+class htmltag.classname, .classname , .c1.c2.c3, htmltag.c1.c2.c3..cn
 e.g 
 input.classname1.classname2
 or
 input.#id.classname1.classname2
 input.lastclassname3 is also correct
 
-3. parenttag>childdtag
+3. parenttag>childtag
 4. htmltag[attribute1='value']
 e.g input[id='username']
 Also we can use multiple attribute and value combinations using separate brackets 
